@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emberlight Archive — a stealth game</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0b0d13;
+    min-height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+  #wrap {
+    text-align: center;
+    padding: 16px;
+  }
+  canvas {
+    width: min(960px, 96vw);
+    height: auto;
+    image-rendering: auto;
+    border: 1px solid #2a2e3d;
+    border-radius: 8px;
+    background: #141824;
+    box-shadow: 0 0 60px rgba(255, 176, 66, 0.08);
+  }
+  p {
+    color: #9a937f;
+    font-size: 13px;
+    margin: 10px 0 0;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="640"></canvas>
+  <p>Emberlight Archive — WASD to move, Shift to sneak, M to mute, R to restart. Take every seal, reach the green exit unseen.</p>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
